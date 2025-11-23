@@ -1,143 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rakesh R - Senior Angular Developer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rakesh R — Senior Angular Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="Rakesh R — Senior Angular Developer. Portfolio and resume.">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+    :root{
+      --primary:#0d6efd;
+      --muted:#6c757d;
+      --card:#fff;
+      --bg:#f8f9fa;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-    }
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    .section { margin-bottom: 20px; }
-    .item { margin-bottom: 15px; }
-    .title { font-weight: bold; font-size: 18px; }
-    .subtitle { color: #666; font-size: 14px; }
-    ul { margin-top: 8px; }
-    .contact p { margin: 3px 0; }
+    body{background:var(--bg); color:#212529;}
+    .hero{background:linear-gradient(90deg, rgba(13,110,253,0.06), transparent); padding:40px 0;}
+    .name{font-weight:700; font-size:28px;}
+    .subtitle{color:var(--muted);}
+    .card{border:0; border-radius:12px; box-shadow:0 6px 18px rgba(16,24,40,0.06);}
+    .skill-badge{margin:3px 6px 6px 0; display:inline-block; padding:6px 10px; font-size:13px; border-radius:999px; background:#eef3ff; color:var(--primary);}
+    a.primary-btn{background:var(--primary); color:#fff; padding:10px 14px; border-radius:8px; text-decoration:none;}
+    footer{padding:24px 0; color:var(--muted); font-size:14px;}
+    @media (max-width:575px){ .name{font-size:22px;} }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Rakesh R</h1>
-    <div class="contact">
-      <p><strong>Phone:</strong> 9047482997</p>
-      <p><strong>Email:</strong> rakeshjack7@gmail.com</p>
-      <p><strong>Location:</strong> Thrissur, Kerala</p>
-      <p><strong>GitHub:</strong> github.com/rakeshjack</p>
-      <p><strong>Certification:</strong> AWS Certified Solutions Architect – Associate</p>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Rakesh R</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <h2>Professional Summary</h2>
-    <p>Senior Angular Developer with 8+ years of experience building scalable, high-performance web applications. Strong in Angular, TypeScript, JavaScript, MVC frameworks, REST APIs, and CI/CD. Proven ability to improve UI performance, collaborate across teams, and deliver reliable applications using Agile SCRUM.</p>
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="card p-4">
+            <div class="d-flex align-items-start gap-3">
+              <div>
+                <div class="name">Rakesh R</div>
+                <div class="subtitle">Senior Angular Developer — 8+ years</div>
+                <p class="mt-3 mb-1">Senior Angular developer experienced in building scalable, high-performance web applications using Angular, TypeScript, RxJS, and modern CI/CD practices.</p>
+                <p class="mb-0"><strong>Location:</strong> Thrissur, Kerala &nbsp; • &nbsp; <strong>Cert:</strong> AWS Solutions Architect – Associate</p>
+                <div class="mt-3">
+                  <a class="primary-btn" href="#contact">Contact Me</a>
+                  <!-- Replace resume.pdf after uploading to repo -->
+                  <a class="btn btn-outline-primary ms-2" href="resume.pdf" target="_blank">Download Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Frontend:</strong> Angular, Angular Material, RxJS, ReactJS, JavaScript, TypeScript, jQuery</li>
-      <li><strong>UI/Styling:</strong> HTML5, CSS3, Bootstrap 3</li>
-      <li><strong>Backend:</strong> Laravel, CodeIgniter, MVC Frameworks</li>
-      <li><strong>Databases:</strong> MySQL, PostgreSQL, SQL Server</li>
-      <li><strong>DevOps/Tools:</strong> Git, GitHub, GitLab, Bitbucket, Jenkins, AWS Services, Shell Scripting</li>
-      <li><strong>Other:</strong> REST APIs, CI/CD Pipelines, Agile SCRUM</li>
-    </ul>
-
-    <h2>Experience</h2>
-
-    <div class="item">
-      <p class="title">HCLTech – Senior Developer</p>
-      <p class="subtitle">Mar 2022 – Present | Chennai</p>
-      <ul>
-        <li>Integrated REST APIs with Angular to improve scalability and maintainability.</li>
-        <li>Implemented CI/CD pipelines using Jenkins and GitHub.</li>
-        <li>Used WinSCP and PuTTY for server access and secure file transfers.</li>
-        <li>Reduced time-to-market by 15% through Agile SCRUM.</li>
-        <li>Improved user experience through collaboration with UX teams.</li>
-      </ul>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <div class="card p-3 text-center">
+            <div><strong>Contact</strong></div>
+            <div class="mt-2"><span class="d-block">📞 9047482997</span><span class="d-block">✉️ <a href="mailto:rakeshjack7@gmail.com">rakeshjack7@gmail.com</a></span></div>
+            <div class="mt-3"><a href="https://github.com/rakeshjack" target="_blank">GitHub</a></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="item">
-      <p class="title">2Base Technologies – Senior Software Engineer</p>
-      <p class="subtitle">Mar 2021 – Feb 2022 | Palakkad</p>
-      <ul>
-        <li>Developed scalable MVC applications with REST API integration.</li>
-        <li>Contributed to microservices architecture reducing downtime by 35%.</li>
-        <li>Improved performance across large datasets.</li>
-      </ul>
+  <main class="py-5">
+    <div class="container">
+      <!-- About -->
+      <section id="about" class="mb-5">
+        <h3>About</h3>
+        <p>Dedicated Angular developer with proven record delivering robust front-end applications. Strong understanding of web services, UI performance, and Agile development lifecycle. Passionate about building maintainable code and improving user experience.</p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="mb-5">
+        <h3>Skills</h3>
+        <div class="card p-3">
+          <div>
+            <span class="skill-badge">Angular</span>
+            <span class="skill-badge">Angular Material</span>
+            <span class="skill-badge">RxJS</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Bootstrap 3</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Jenkins</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">PostgreSQL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="mb-5">
+        <h3>Experience</h3>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>HCLTech — Senior Developer</strong><br/><small class="text-muted">Mar 2022 – Present | Chennai</small></div>
+            <div class="text-end"><small class="text-muted">CI/CD • Angular • REST</small></div>
+          </div>
+          <ul class="mt-3">
+            <li>Integrated REST APIs with Angular applications and improved scalability.</li>
+            <li>Built CI/CD pipelines using Jenkins and GitHub; automated build/test/deploy.</li>
+            <li>Used shell scripts for deployments and managed remote servers with WinSCP/PUTTY.</li>
+            <li>Championed Agile SCRUM and introduced Jira to streamline delivery.</li>
+          </ul>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>2Base Technologies — Senior Software Engineer</strong><br/><small class="text-muted">Mar 2021 – Feb 2022 | Palakkad</small></div>
+            <div class="text-end"><small class="text-muted">MVC • Microservices</small></div>
+          </div>
+          <ul class="mt-3">
+            <li>Developed MVC-based web apps and integrated REST APIs.</li>
+            <li>Contributed to microservice architecture reducing downtime by ~35%.</li>
+          </ul>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>Knackforge — Angular Developer</strong><br/><small class="text-muted">Mar 2019 – Feb 2021 | Chennai</small></div>
+            <div class="text-end"><small class="text-muted">Angular • Testing</small></div>
+          </div>
+          <ul class="mt-3">
+            <li>Delivered Angular (AngularJS & v2+) applications and implemented unit & E2E tests.</li>
+            <li>Improved front-end performance by ~20% through code optimizations.</li>
+          </ul>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>ThinkSynQ Solutions — Senior Software Engineer</strong><br/><small class="text-muted">Mar 2017 – Feb 2019 | Chennai</small></div>
+            <div class="text-end"><small class="text-muted">Angular • MVC</small></div>
+          </div>
+          <ul class="mt-3">
+            <li>Refactored legacy code into MVC architecture and designed Angular components.</li>
+          </ul>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>Webcrafters — Software Engineer</strong><br/><small class="text-muted">Jan 2015 – Feb 2017 | Chennai</small></div>
+            <div class="text-end"><small class="text-muted">React • UI</small></div>
+          </div>
+          <ul class="mt-3">
+            <li>Implemented responsive UI using ReactJS and Bootstrap; built REST APIs using Laravel/CodeIgniter.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="mb-5">
+        <h3>Projects</h3>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h5>Paxcos (Angular 6)</h5>
+              <p>Google Maps integration with CodeIgniter backend for geographic grid-based equipment location display.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h5>EM3-Samadhan</h5>
+              <p>Farmer support platform built with Angular 6, Angular Material, Bootstrap front-end and Laravel + SQL Server backend.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h5>LMS</h5>
+              <p>Lead management application using Angular Services, RxJS and REST APIs.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h5>Hitchbiker</h5>
+              <p>Ride-sharing app with payment gateway (Paytm), SMS and FCM notifications using CodeIgniter + MySQL.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="mb-5">
+        <h3>Education</h3>
+        <div class="card p-3">
+          <ul class="mb-0">
+            <li>B.Tech (IT) — REC, Coimbatore (2011–2014)</li>
+            <li>DCE — NPA CPT, Kotagiri (2009–2011)</li>
+            <li>Higher Secondary & SSLC — CSI HR Sec School, Kotagiri</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="mb-5">
+        <h3>Contact</h3>
+        <div class="card p-3">
+          <p><strong>Phone:</strong> 9047482997</p>
+          <p><strong>Email:</strong> <a href="mailto:rakeshjack7@gmail.com">rakeshjack7@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/rakeshjack" target="_blank">github.com/rakeshjack</a></p>
+          <p><strong>Address:</strong> 499A/8, Kumbalakodu, Pazhayannur, Thrissur — 680587</p>
+        </div>
+      </section>
     </div>
+  </main>
 
-    <div class="item">
-      <p class="title">Knackforge – Angular Developer</p>
-      <p class="subtitle">Mar 2019 – Feb 2021 | Chennai</p>
-      <ul>
-        <li>Built AngularJS and Angular 2/4 applications.</li>
-        <li>Implemented unit and E2E testing.</li>
-        <li>Improved front-end performance by 20%.</li>
-        <li>Worked with GitLab CI/CD and AWS.</li>
-      </ul>
+  <footer class="bg-white">
+    <div class="container text-center">
+      <small>&copy; <span id="year"></span> Rakesh R — Senior Angular Developer</small>
     </div>
+  </footer>
 
-    <div class="item">
-      <p class="title">ThinkSynQ Solutions – Senior Software Engineer</p>
-      <p class="subtitle">Mar 2017 – Feb 2019 | Chennai</p>
-      <ul>
-        <li>Modernized legacy systems to MVC architecture.</li>
-        <li>Designed Angular components and handled full lifecycle.</li>
-      </ul>
-    </div>
-
-    <div class="item">
-      <p class="title">Webcrafters – Software Engineer</p>
-      <p class="subtitle">Jan 2015 – Feb 2017 | Chennai</p>
-      <ul>
-        <li>Developed responsive UI using ReactJS, Bootstrap, and CSS3.</li>
-        <li>Managed Git repositories and Bitbucket pipelines.</li>
-        <li>Built REST APIs with Laravel and CodeIgniter.</li>
-      </ul>
-    </div>
-
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Paxcos (Angular 6):</strong> Integrated Google Maps API, built location grid mapping system.</li>
-      <li><strong>Domios UI:</strong> PSD to HTML/CSS/Bootstrap and integrated into React.</li>
-      <li><strong>EM3-Samadhan:</strong> Angular 6 + Laravel + SQL Server for farmer support system.</li>
-      <li><strong>LMS:</strong> Lead management UI with Angular Services, RxJS, REST APIs.</li>
-      <li><strong>Hitchbiker:</strong> CodeIgniter + MySQL ride-sharing app with payment and notifications.</li>
-    </ul>
-
-    <h2>Education</h2>
-    <ul>
-      <li>B.Tech IT – REC, Coimbatore (2011–2014)</li>
-      <li>DCE – NPA CPT, Kotagiri (2009–2011)</li>
-      <li>Higher Secondary – CSI Hr Sec School</li>
-      <li>SSLC – CSI Hr Sec School</li>
-    </ul>
-
-    <h2>Languages</h2>
-    <p>Tamil, English, Malayalam</p>
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
